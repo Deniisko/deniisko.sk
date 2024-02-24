@@ -1,0 +1,160 @@
+/* body {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(233, 200, 166);
+    height: 100vh;
+} */
+
+
+body {
+    background: rgb(219, 182, 169); 
+   
+  }
+
+main {
+    height: auto;
+    margin-bottom: 110px;
+}
+  
+  @keyframes firework {
+    0% { 
+      transform: translate(-50%, 60vh);
+      width: 0.5vmin;
+      opacity: 1;
+    }
+    50% { 
+      width: 0.5vmin;
+      opacity: 1;
+    }
+    100% { 
+      width: 45vmin; 
+      opacity: 0; 
+    }
+  }
+  
+  .firework,
+  .firework::before,
+  .firework::after {
+    --top: 60vh;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5vmin;
+    aspect-ratio: 1;
+    background:
+      /* random backgrounds */
+      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 00%,
+      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 00% 50%,
+      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 50% 99%,
+      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 99% 50%,
+      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 90%,
+      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 95% 90%,
+      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
+      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 31% 80%,
+      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
+      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
+      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
+      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 13% 24%
+      ;
+    background-size: 0.5vmin 0.5vmin;
+    background-repeat: no-repeat;
+    animation: firework 2s infinite;
+  }
+  
+  .firework::before {
+    transform: translate(-50%, -50%) rotate(25deg) !important; 
+  }
+  
+  .firework::after {
+    transform: translate(-50%, -50%) rotate(-37deg) !important;
+  }
+
+
+
+  /* zatial najkrajší */
+
+  @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+.snip1482 {
+  font-family: 'Fauna One', Arial, sans-serif;
+  position: relative;
+  margin: 10px 20px;
+  min-width: 230px;
+  max-width: 400px;
+  min-height: 220px;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: #1a1a1a;
+  font-size: 16px;
+
+  margin-top: 175px;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+
+}
+.snip1482 figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+
+}
+.snip1482 h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482 p {
+  font-size: 0.8em;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
