@@ -8,14 +8,17 @@
 
 
 body {
-    background: rgb(219, 182, 169); 
+    background: rgb(0, 0, 0); 
    
   }
 
 main {
-    height: auto;
+    /* height: 100vh; */
     margin-bottom: 110px;
 }
+
+
+/* FIREWORK */
   
   @keyframes firework {
     0% { 
@@ -47,17 +50,17 @@ main {
     background:
       /* random backgrounds */
       radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 00%,
-      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 00% 50%,
-      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 50% 99%,
-      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 99% 50%,
-      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 90%,
-      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 95% 90%,
-      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
-      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 31% 80%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 00% 50%,
+      radial-gradient(circle, rgb(136, 255, 0) 0.5vmin, #0000 0) 50% 99%,
+      radial-gradient(circle, rgb(0, 149, 255) 0.2vmin, #0000 0) 99% 50%,
+      radial-gradient(circle, rgb(0, 255, 153) 0.3vmin, #0000 0) 80% 90%,
+      radial-gradient(circle, rgb(204, 0, 255) 0.5vmin, #0000 0) 95% 90%,
+      radial-gradient(circle, rgb(255, 111, 0) 0.5vmin, #0000 0) 10% 60%,
+      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 31% 80%,
       radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
-      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
-      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
-      radial-gradient(circle, #ff0 0.5vmin, #0000 0) 13% 24%
+      radial-gradient(circle, rgb(26, 255, 0) 0.2vmin, #0000 0) 90% 23%,
+      radial-gradient(circle, rgb(0, 8, 255) 0.3vmin, #0000 0) 45% 20%,
+      radial-gradient(circle, rgb(255, 255, 255) 0.5vmin, #0000 0) 13% 24%
       ;
     background-size: 0.5vmin 0.5vmin;
     background-repeat: no-repeat;
@@ -72,9 +75,12 @@ main {
     transform: translate(-50%, -50%) rotate(-37deg) !important;
   }
 
+  
+
+/* skušanie vedla seba */
 
 
-  /* zatial najkrajší */
+  /* zatial najkrajší img layout */
 
   @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
@@ -86,10 +92,10 @@ main {
   max-width: 400px;
   min-height: 220px;
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   text-align: right;
   line-height: 1.4em;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   font-size: 16px;
 
   margin-top: 175px;
@@ -102,7 +108,7 @@ main {
 }
 .snip1482 img {
   position: absolute;
-  right: 0%;
+  right: 7%;
   top: 50%;
   opacity: 1;
   width: 100%;
@@ -157,4 +163,114 @@ main {
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
   opacity: 1;
+}
+
+/* SPIN LEFT */
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+.snip1482-left {
+  font-family: 'Fauna One', Arial, sans-serif;
+  position: relative;
+  margin: 10px 20px;
+  min-width: 230px;
+  max-width: 400px;
+  min-height: 220px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #ffffff;
+  font-size: 16px;
+
+  margin-top: 175px;
+}
+
+.snip1482-left:first-child{
+   padding-top: 0;
+}
+
+.snip1482-left * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482-left img {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+
+}
+.snip1482-left figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+
+}
+.snip1482-left h2,
+.snip1482-left p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+
+}
+.snip1482-left h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482-leftp {
+  font-size: 0.8em;
+}
+.snip1482-left a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482-left:hover img,
+.snip1482-left.hover img {
+  width: 55%;
+  left: -10%;
+}
+.snip1482-left:hover figcaption h2,
+.snip1482-left.hover figcaption h2,
+.snip1482-left:hover figcaption p,
+.snip1482-left.hover figcaption p {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+
+
+
+
+/* špekulácie */
+@keyframes headerAnimation {
+    0% {
+        background-color: #afafaf; /* Počiatočná farba pozadia */
+    }
+    50% {
+        background-color: #238d41; /* Farba pozadia počas animácie */
+    }
+    100% {
+        background-color: #a7a7a7; /* Farba pozadia po skončení animácie */
+    }
+}
+.header-animation {
+    animation: headerAnimation 2.2s ease forwards; /* Animácia premeny farby pozadia */
 }

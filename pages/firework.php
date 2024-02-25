@@ -10,10 +10,12 @@
 </head>
 <body class="bg-dark">
     <header>
-    <h5 class="text-light text-center mt-5">Tento malunký a tichučký ohnostroj je pre teba nemáš začo</h5>
+    <h4 class="text-light text-center mt-5">Tento malučký a tichučký ohnostroj je pre teba nemáš začo</h4>
     </header>
     
-<div class="firework"></div>
+    <div class="fireworks-container">
+        <div class="firework"></div>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="../public/script.js"></script>
