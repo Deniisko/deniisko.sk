@@ -11,7 +11,7 @@
 <body>
        
     <header>
-            <div class="container-fluid text-center text-light mb-0 mt-1 header-animation">
+            <div class="container-fluid text-center text-light mb-0 mt-3 header-animation">
                 <h1>K&D 30 </h1>
             </div>
     </header>

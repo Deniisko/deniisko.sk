@@ -8,7 +8,8 @@
 
 
 body {
-    background: rgb(0, 0, 0); 
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 25%, rgba(255,255,255,1) 100%);
    
   }
 
@@ -16,64 +17,6 @@ main {
     /* height: 100vh; */
     margin-bottom: 110px;
 }
-
-
-/* FIREWORK */
-  
-  @keyframes firework {
-    0% { 
-      transform: translate(-50%, 60vh);
-      width: 0.5vmin;
-      opacity: 1;
-    }
-    50% { 
-      width: 0.5vmin;
-      opacity: 1;
-    }
-    100% { 
-      width: 45vmin; 
-      opacity: 0; 
-    }
-  }
-  
-  .firework,
-  .firework::before,
-  .firework::after {
-    --top: 60vh;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0.5vmin;
-    aspect-ratio: 1;
-    background:
-      /* random backgrounds */
-      radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 00%,
-      radial-gradient(circle, rgb(255, 0, 0) 0.3vmin, #0000 0) 00% 50%,
-      radial-gradient(circle, rgb(136, 255, 0) 0.5vmin, #0000 0) 50% 99%,
-      radial-gradient(circle, rgb(0, 149, 255) 0.2vmin, #0000 0) 99% 50%,
-      radial-gradient(circle, rgb(0, 255, 153) 0.3vmin, #0000 0) 80% 90%,
-      radial-gradient(circle, rgb(204, 0, 255) 0.5vmin, #0000 0) 95% 90%,
-      radial-gradient(circle, rgb(255, 111, 0) 0.5vmin, #0000 0) 10% 60%,
-      radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 31% 80%,
-      radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
-      radial-gradient(circle, rgb(26, 255, 0) 0.2vmin, #0000 0) 90% 23%,
-      radial-gradient(circle, rgb(0, 8, 255) 0.3vmin, #0000 0) 45% 20%,
-      radial-gradient(circle, rgb(255, 255, 255) 0.5vmin, #0000 0) 13% 24%
-      ;
-    background-size: 0.5vmin 0.5vmin;
-    background-repeat: no-repeat;
-    animation: firework 2s infinite;
-  }
-  
-  .firework::before {
-    transform: translate(-50%, -50%) rotate(25deg) !important; 
-  }
-  
-  .firework::after {
-    transform: translate(-50%, -50%) rotate(-37deg) !important;
-  }
 
   
 
@@ -272,5 +215,5 @@ main {
     }
 }
 .header-animation {
-    animation: headerAnimation 2.2s ease forwards; /* Animácia premeny farby pozadia */
+    animation: headerAnimation 4s ease forwards; /* Animácia premeny farby pozadia */
 }
